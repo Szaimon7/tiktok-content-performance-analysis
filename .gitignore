@@ -1,0 +1,28 @@
+# środowiska i pamięć podręczna Pythona
+.venv/
+__pycache__/
+*.py[cod]
+
+# ustawienia lokalne i sekrety
+.env
+.env.*
+.vscode/
+
+# prywatne dane i importy bazy
+data/private/
+*private*.csv
+*private*.xlsx
+import_tiktok_data*.sql
+
+# pliki pomocnicze LaTeX
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+
+# pliki systemowe
+.DS_Store
+Thumbs.db
