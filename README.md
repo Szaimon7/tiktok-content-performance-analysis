@@ -97,3 +97,31 @@ To reproduce the values previously calculated in the database view, Like Rate is
 ## Report
 
 The complete mathematical description and interpretation are available in [like_rate_views.pdf](like_rate_views.pdf)
+
+## Reaction scaling
+
+This analysis compares how likes, comments, shares, and active reactions scale with the number of views using log-log regression models.
+
+The reference point is proportional scaling, represented by `gamma = 1`. The analysis uses HC3 robust standard errors, paired bootstrap comparisons, and a sensitivity analysis excluding the seven most-viewed videos.
+
+### Key findings
+
+- Likes and comments scale sublinearly, so their rates decrease as reach grows
+- Shares scale approximately proportionally with views
+- Shares scale significantly faster than likes
+- The difference between shares and likes remains after excluding the seven most-viewed videos
+- The difference between shares and comments is sensitive to the viral tail
+
+### Run the analysis
+
+```powershell
+.\.venv\Scripts\python.exe .\src\reaction_scaling.py
+
+```
+
+### Outputs
+
+- `figures/reaction_elasticities.png`
+- `results/reaction_elasticities.csv`
+- `results/reaction_elasticity_differences.csv`
+- `reaction_scaling.pdf`

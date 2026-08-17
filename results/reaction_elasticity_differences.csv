@@ -1,0 +1,5 @@
+sample,sample_label,first_reaction,second_reaction,gamma_difference,bootstrap_ci_lower,bootstrap_ci_upper,approximate_p_value,bootstrap_samples
+full,Pełna próba,shares,likes,0.27945285,0.19354520,0.36009643,0.00019998,10000
+full,Pełna próba,shares,comments,0.24639304,0.10100595,0.36253614,0.00299970,10000
+without_top7,Bez TOP 7,shares,likes,0.24571214,0.11542503,0.37682728,0.00079992,10000
+without_top7,Bez TOP 7,shares,comments,0.11149713,-0.09095096,0.31514518,0.27697230,10000
