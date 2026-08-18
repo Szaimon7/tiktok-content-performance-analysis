@@ -124,6 +124,9 @@ results/
     reaction_elasticities.csv
     reaction_elasticity_differences.csv
 
+sql/
+    public_analysis.sql
+
 src/
     like_rate_views.py
     reaction_scaling.py
@@ -134,6 +137,16 @@ reaction_scaling.pdf
 reaction_scaling.tex
 requirements.txt
 ```
+
+## SQL layer
+
+`sql/public_analysis.sql` defines an analysis-ready MariaDB view that joins video metrics, anonymized speakers, formats, and qualitative content scores.
+
+The public view excludes original identifiers, private documentation, topics, and experimental composite indices.
+
+The SQL file contains only the view definition. The underlying private tables and data are not published.
+
+The Python analyses remain fully reproducible from the two anonymized public datasets.
 
 ## Reproduction
 
